@@ -1,2 +1,22 @@
-# Python-Electronics-Bot-Availability-and-Pricing-Checker
-- I wrote this program to webscrape popular electronics sales web sites for pricing and availability of selected items by hyperlink during COVID. During this time it was incredibly difficult to find these items not only due to material and workforce shortages, the Suez Canal supply chain disruptions, but also these items were being purchased price gaugers using bots to buy at MSRP, later flipping them for 4 times the amount. 
+# Electronics Availability and Pricing Bot
+
+Automated web scraper that monitors GPU availability and pricing across Best Buy and NVIDIA.com, built during the COVID-era GPU shortage when RTX cards were being scalped at 3-4x MSRP by automated bots.
+
+## Overview
+
+`RTX_Checker_BESTBUY_n_NVIDIA.ipynb` polls product pages at a configurable interval, parses stock status and current price, and alerts when an item transitions from out-of-stock to available. Demonstrates web scraping, scheduled polling, and real-time alerting logic.
+
+## How to Run
+
+```bash
+pip install requests beautifulsoup4
+jupyter notebook RTX_Checker_BESTBUY_n_NVIDIA.ipynb
+```
+
+Update the target product URLs in the notebook config cell to monitor different SKUs or retailers.
+
+## Tech Stack
+- Python 3
+- `requests` — HTTP page fetching
+- `beautifulsoup4` — HTML parsing and element targeting
+- `time` — polling interval scheduling
