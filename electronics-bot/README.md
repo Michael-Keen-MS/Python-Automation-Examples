@@ -1,0 +1,2 @@
+# Python-Electronics-Bot-Availability-and-Pricing-Checker
+- I wrote this program to webscrape popular electronics sales web sites for pricing and availability of selected items by hyperlink during COVID. During this time it was incredibly difficult to find these items not only due to material and workforce shortages, the Suez Canal supply chain disruptions, but also these items were being purchased price gaugers using bots to buy at MSRP, later flipping them for 4 times the amount. 
